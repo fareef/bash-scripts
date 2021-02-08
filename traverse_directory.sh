@@ -84,6 +84,7 @@ echo "sending email..." | mailx -a "$REPORT_NAME" -s "$subject" -r "$from" -c "$
 
 function main() {
     traverse "$1"
+    send_mail
 }
 
 main "$1"
